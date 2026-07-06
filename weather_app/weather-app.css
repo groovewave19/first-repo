@@ -5,7 +5,7 @@ body {
     color: rgb(138, 121, 121);
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, rgb(224, 113, 131), rgb(78, 157, 171));
+    background: lineargradient(to right, rgb(224, 113, 131), rgb(78, 157, 171));
 }
 
 header {
@@ -125,7 +125,7 @@ header {
     background-color: blanchedalmond;
 }
 
-#close-btn {
+.close-btn {
     position: relative;
     top: 0;
     height: 30px;
@@ -153,7 +153,7 @@ header {
     width: 100px;
 }
 
-#condition {
+##condition {
     font-size: 22px;
 }
 
@@ -164,7 +164,7 @@ header {
 #extreme-temp-c {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space evenly;
     font-size: 16px;
 }
 
