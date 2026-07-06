@@ -13,7 +13,7 @@ let timezone_offset;
 let intervalId;  //to store interval id to clear it after closing search-btn
 
 async function weatherData(name) {
-    const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c4df9b06310d4524ab2175715242012&q=${name}&days=1&aqi=yes&alerts=yes`);
+    const data = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${name}&days=1&aqi=yes&alerts=yes`);
     // Fetching data from weather API
     return await data.json();
 }
@@ -52,8 +52,8 @@ function updateTime(timezone, locationName) {
         //'en-US' specifies English (US) as the locale for formatting
             timeZone: timezone,
             hour: '2-digit',    //hours range from 01-24
-            minute: '2-digit',  //minutes range from 00-59
-            second: '2-digit',  //seconds range from 00-59
+            minute: '10-digit',  //minutes range from 00-59
+            second: '20-digit',  //seconds range from 00-59
             hour12: false       //using 24 hour clock 
         });
         //Intl.DateTimeFormat is a built-in JS API for formatting dates and times according to 
