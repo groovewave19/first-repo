@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0; 
+    height: 100vh;
+    color: rgb(138, 121, 121);
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(224, 113, 131), rgb(78, 157, 171));
+}
+
+header {
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(235, 240, 244);
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    height: 65%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.45), inset 5px 0px 10px  rgba(0, 0, 0, 0.45);
+}
+
+.search-bar {
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+#user-input-location {
+    height: 25px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(215, 195, 195);
+}
+
+#search-btn {
+    cursor: pointer;
+    height: 27px;
+    width: 17%;
+    border: none;
+    background-color: rgb(84, 164, 84);
+    color: azure;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(42, 168, 42);
+}
+
+.or-option {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: serif;
+    font-size: 25px;
+}
+
+.line {
+    width: 42%;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.current-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#user-location-btn {
+    color: azure;
+    cursor: pointer;
+    margin-top: 17px;
+    height: 27px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(166, 203, 17);
+    transition: 0.3s;
+}
+
+#user-location-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(195, 234, 39);  
+}
+
+#overlay-result {
+    position: fixed;         
+    top: 0;                   
+    left: 0;                  
+    width: 100%;              
+    height: 100%;             
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgb(92, 33, 147);             
+    display: none;            
+    justify-content: center;  
+    align-items: center;      
+    font-size: 10px;          
+}
+
+#result {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 85%;
+    width: 40%;
+    border: none;
+    background-color: blanchedalmond;
+}
+
+#close-btn {
+    position: relative;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    color: azure;
+    background-color: rgb(145, 32, 32);
+    cursor: pointer;
+    left: 241px;
+    border: none;
+    text-align: center;
+}
+
+#close-btn:hover {
+    background-color: rgb(219, 20, 20);
+}
+
+#location-name {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#forecast-icon {
+    height: 100px;
+    width: 100px;
+}
+
+#condition {
+    font-size: 22px;
+}
+
+#location-temp-c, #location-time {
+    font-size: 16px;
+}
+
+#extreme-temp-c {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather-app.css">
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <header>Search by Name</header><br>
+        <div class="search-bar">
+            <input type="text" id="user-input-location" placeholder="Enter a location">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="or-option">
+            <div class="line"><hr width="100%"></div>
+            <p>OR</p>
+            <div class="line"><hr width="100%"></div>
+        </div>
+
+        <div class="current-location">
+            <p>Get forecast of your current Location</p>
+            <button id="user-location-btn">My Current Forecast</button>
+        </div>
+
+    </div>
+
+
+    <div id="overlay-result">
+        <div id="result">
+            <button id="close-btn">X</button>
+            <p id="location-name"></p>
+            <img src="" alt="icon" id="forecast-icon">
+            <p id="condition"></p>
+            <p id="location-temp-c"></p>
+            <div id="extreme-temp-c">
+                <p id="max-temp-c"></p>
+                <p id="min-temp-c"></p>
+            </div>
+            <p id="location-time"></p>
+        </div>
+    </div>
+
+    <script src="weather_script.js"></script>
+
+</body>
+</html>
